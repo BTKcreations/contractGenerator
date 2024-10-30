@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "scripts": {
+  "start-express": "cd interface-with-form-backend && nodemon server.js",
+  "start-react": "cd interface-with-form && npm start",
+  "start-all": "concurrently \"npm run start-express\" \"npm run start-react\""
+}
+
+}
